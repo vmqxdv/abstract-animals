@@ -8,6 +8,22 @@ public abstract class Animal {
   private float weight;
   private float height;
 
+  public Animal() {
+    this.name = null;
+    this.age = 0;
+    this.sex = 0;
+    this.weight = 0f;
+    this.height = 0f;
+  }
+
+  public Animal(String name, int age, int sex, float weight, float height) {
+    this.name = name;
+    this.age = age;
+    this.sex = sex;
+    this.weight = weight;
+    this.height = height;
+  }
+
   // -- Name
   public String getName() {
     return this.name;
