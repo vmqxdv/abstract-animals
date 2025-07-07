@@ -5,6 +5,18 @@ public class Sparrow extends Animal {
   private String featherColor;
   private boolean canFly;
 
+  public Sparrow() {
+    super();
+    this.featherColor = null;
+    this.canFly = false;
+  }
+
+  public Sparrow(String name, int age, int sex, float weight, float height, String featherColor, boolean canFly) {
+    super(name, age, sex, weight, height);
+    this.featherColor = featherColor;
+    this.canFly = canFly;
+  }
+
   // -- Feather Color
   public String getFeatherColor() {
     return this.featherColor;
