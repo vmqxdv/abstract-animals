@@ -53,4 +53,13 @@ public abstract class Animal {
     this.height = height;
   }
 
+  // -- General Methods
+  public void sleep() {
+    System.out.println("ZzZz...");
+  }
+
+  public abstract void makeSound();
+
+  public abstract void eat();
+
 }
