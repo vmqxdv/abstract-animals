@@ -5,6 +5,18 @@ public class Dog extends Animal {
   private String breed;
   private boolean isTrained;
 
+  public Dog() {
+    super();
+    this.breed = null;
+    this.isTrained = false;
+  }
+
+  public Dog(String name, int age, int sex, float weight, float height, String breed, boolean isTrained) {
+    super(name, age, sex, weight, height);
+    this.breed = breed;
+    this.isTrained = isTrained;
+  }
+
   // -- Breed
   public String getBreed() {
     return this.breed;
