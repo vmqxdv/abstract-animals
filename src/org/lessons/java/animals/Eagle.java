@@ -5,6 +5,18 @@ public class Eagle extends Animal {
   private double wingspan;
   private int maxFlightAltitude;
 
+  public Eagle() {
+    super();
+    this.wingspan = 0;
+    this.maxFlightAltitude = 0;
+  }
+
+  public Eagle(String name, int age, int sex, float weight, float height, double wingspan, int maxFlightAltitude) {
+    super(name, age, sex, weight, height);
+    this.wingspan = wingspan;
+    this.maxFlightAltitude = maxFlightAltitude;
+  }
+
   // -- Wingspan
   public double getWingspan() {
     return this.wingspan;
