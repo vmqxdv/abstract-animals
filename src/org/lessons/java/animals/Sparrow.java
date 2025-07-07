@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Sparrow extends Animal {
+public class Sparrow extends Animal implements Fly {
 
   private String featherColor;
   private boolean canFly;
@@ -46,4 +46,9 @@ public class Sparrow extends Animal {
     System.out.println("*Mangia semi*");
   }
 
+  // -- Implemented
+  @Override
+  public void fly() {
+    System.out.printf("%s sta volando!", this.getName());
+  }
 }

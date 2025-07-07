@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Eagle extends Animal {
+public class Eagle extends Animal implements Fly {
 
   private double wingspan;
   private int maxFlightAltitude;
@@ -44,5 +44,11 @@ public class Eagle extends Animal {
   @Override
   public void eat() {
     System.out.println("*Mangia un topo*");
+  }
+
+  // -- Implemented
+  @Override
+  public void fly() {
+    System.out.printf("%s sta volando!", this.getName());
   }
 }

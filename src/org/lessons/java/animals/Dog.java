@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Swim {
 
   private String breed;
   private boolean isTrained;
@@ -44,6 +44,12 @@ public class Dog extends Animal {
   @Override
   public void eat() {
     System.out.println("*Mangia carne*");
+  }
+
+  // -- Implemented
+  @Override
+  public void swim() {
+    System.out.printf("%s sta nuotando!", this.getName());
   }
 
 }

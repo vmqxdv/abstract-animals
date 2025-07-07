@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Dolphin extends Animal {
+public class Dolphin extends Animal implements Swim {
 
   private double swimSpeed;
   private int maxDiveDepth;
@@ -44,5 +44,11 @@ public class Dolphin extends Animal {
   @Override
   public void eat() {
     System.out.println("*Mangia un pesce*");
+  }
+
+  // -- Implemented
+  @Override
+  public void swim() {
+    System.out.printf("%s sta nuotando!", this.getName());
   }
 }
