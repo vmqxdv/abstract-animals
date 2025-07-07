@@ -26,7 +26,7 @@ public class Dog extends Animal {
   // -- Inherited
   @Override
   public void makeSound() {
-    System.out.println("Woof woof!!");
+    System.out.println("Woof Woof!!");
   }
 
   @Override
