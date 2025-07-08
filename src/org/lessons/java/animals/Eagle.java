@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Eagle extends Animal implements Fly {
+public class Eagle extends AbstractAnimal implements IFly {
 
   private double wingspan;
   private int maxFlightAltitude;

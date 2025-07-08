@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Sparrow extends Animal implements Fly {
+public class Sparrow extends AbstractAnimal implements IFly {
 
   private String featherColor;
   private boolean canFly;

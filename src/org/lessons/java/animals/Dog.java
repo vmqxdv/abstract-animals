@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Dog extends Animal implements Swim {
+public class Dog extends AbstractAnimal implements ISwim {
 
   private String breed;
   private boolean isTrained;

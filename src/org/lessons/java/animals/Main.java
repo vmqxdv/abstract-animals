@@ -1,15 +1,6 @@
 package org.lessons.java.animals;
 
 public class Main {
-
-  public static void iFly(Fly animal) {
-    animal.fly();
-  }
-
-  public static void iSwim(Swim animal) {
-    animal.swim();
-  }
-
   public static void main(String[] args) {
     Dog dog = new Dog("Dotto", 5, 1, 20.5f, 0.6f, "Labrador", true);
     Sparrow sparrow = new Sparrow("Brontolo", 2, 0, 0.03f, 0.15f, "Brown", true);
@@ -20,7 +11,7 @@ public class Main {
     dog.sleep();
     dog.eat();
     dog.makeSound();
-    iSwim(dog);
+    makeItSwim(dog);
 
     System.out.println("\n----------------");
 
@@ -28,7 +19,7 @@ public class Main {
     sparrow.sleep();
     sparrow.eat();
     sparrow.makeSound();
-    iFly(sparrow);
+    makeItFly(sparrow);
 
     System.out.println("\n----------------");
 
@@ -36,7 +27,7 @@ public class Main {
     eagle.sleep();
     eagle.eat();
     eagle.makeSound();
-    iFly(eagle);
+    makeItFly(eagle);
 
     System.out.println("\n----------------");
 
@@ -44,8 +35,16 @@ public class Main {
     dolphin.sleep();
     dolphin.eat();
     dolphin.makeSound();
-    iSwim(dolphin);
+    makeItSwim(dolphin);
 
     System.out.println("\n----------------");
+  }
+
+  static void makeItFly(IFly animal) {
+    animal.fly();
+  }
+
+  static void makeItSwim(ISwim animal) {
+    animal.swim();
   }
 }

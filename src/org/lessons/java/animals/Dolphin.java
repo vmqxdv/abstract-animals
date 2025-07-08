@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public class Dolphin extends Animal implements Swim {
+public class Dolphin extends AbstractAnimal implements ISwim {
 
   private double swimSpeed;
   private int maxDiveDepth;

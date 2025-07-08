@@ -1,5 +1,5 @@
 package org.lessons.java.animals;
 
-public interface Fly {
+public interface IFly {
   public void fly();
 }

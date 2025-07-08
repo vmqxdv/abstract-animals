@@ -1,6 +1,6 @@
 package org.lessons.java.animals;
 
-public abstract class Animal {
+public abstract class AbstractAnimal {
 
   private String name;
   private int age;
@@ -8,7 +8,7 @@ public abstract class Animal {
   private float weight;
   private float height;
 
-  public Animal() {
+  public AbstractAnimal() {
     this.name = null;
     this.age = 0;
     this.sex = 0;
@@ -16,7 +16,7 @@ public abstract class Animal {
     this.height = 0f;
   }
 
-  public Animal(String name, int age, int sex, float weight, float height) {
+  public AbstractAnimal(String name, int age, int sex, float weight, float height) {
     this.name = name;
     this.age = age;
     this.sex = sex;
